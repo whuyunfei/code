@@ -1,0 +1,12 @@
+# 核心依赖
+pytesseract>=0.3.10          # 本地OCR识别（Tesseract封装）
+Pillow>=10.0.0               # 图片处理（PIL）
+fitz>=0.0.1.dev2             # PDF处理（PyMuPDF，代码中import fitz）
+anthropic>=0.20.0            # 智谱Claude API调用
+pandas>=2.0.0                # 数据处理与Excel报告生成
+openpyxl>=3.1.0              # Excel文件写入（pandas依赖）
+playwright>=1.40.0           # 浏览器自动化（Chromium）
+browser-use>=0.1.0           # 浏览器会话管理（代码中BrowserSession）
+requests>=2.31.0             # HTTP请求（Chrome调试、链接验证）
+python-dotenv>=1.0.0         # 可选：环境变量管理（建议添加）
+regex>=2023.10.3             # 增强正则表达式（可选，兼容标准re）
