@@ -36,15 +36,15 @@ from openpyxl.utils import get_column_letter
 TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 
-ZHIPU_API_KEY = "1850f3d00d89466a8c3880f305c52ccd.uhlQ4L6TXaXOEhP8"
-ZHIPU_BASE_URL = "https://open.bigmodel.cn/api/anthropic"
+ZHIPU_API_KEY = "你自己的api"
+ZHIPU_BASE_URL = "大模型链接"
 MODEL = "claude-3-5-sonnet-20241022"
 
-CHROME_EXECUTABLE_PATH = r"C:\Users\taoyuanxu\AppData\Local\ms-playwright\chromium-1223\chrome-win64\chrome.exe"
+CHROME_EXECUTABLE_PATH = r"chrome.exe在你电脑中的位置"
 CDP_PORT = 9223
-PROXY_SERVER = "http://bjproxy2.cicc.group:8080"
+PROXY_SERVER = "你自己的代理"
 
-# 等待时间（减半）
+# 等待时间
 WAIT_LONG = 5
 WAIT_SHORT = 0.5
 WAIT_CHROME_MAX = 5
