@@ -1,0 +1,13 @@
+在CICC（China International Capital Corporation Limited）实习的这段时间，主要工作内容如下：
+1.研报pdf中图表抓取
+  方法1：python的fitz内置函数find_tables确定表格坐标并截图
+  方法2：k-means聚类算法、dbscan等机器学习算法
+  方法3（最终采用）：mineru提取研报pdf中的json和html代码，根据json中表格的坐标截图
+
+2.生成模拟研报表格（文件夹table_gen）
+  共生成带隔行底色、单 / 双下划线的标准通用财务明细表格（normal.py）、带两级分组表头、科目缩进、纯无边框专业合并财务报表（financial_report.py）、全空白无底色无任何线条极简财务表格（noborders.py）、无边框、区分深蓝表头浅蓝行标双色财务表格（noborders_nocolors.py）等多种样式表格。
+工作内容1和2主要用于作为提取表格机器学习任务的训练数据
+
+3.图片溯源（文件夹image_）
+  方法1:（最终采用）：ocr提取图片内容 + browser-use自动化溯源网页 + 大模型比对图片-网页
+  方法2：webwright部署
